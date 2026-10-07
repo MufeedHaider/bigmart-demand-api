@@ -1,0 +1,10 @@
+# Runtime only (what the Docker image installs). Training/dev extras are in pyproject.toml.
+# The model file is a pickle, so the libraries that created it are pinned to the exact versions it was trained with.
+pandas==3.0.5
+numpy==2.5.3
+scikit-learn==1.9.1
+lightgbm==4.7.0
+joblib==1.6.0
+fastapi>=0.110
+uvicorn>=0.29
+pydantic>=2.6

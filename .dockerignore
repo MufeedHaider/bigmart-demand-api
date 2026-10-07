@@ -1,0 +1,10 @@
+data/
+reports/
+tests/
+scripts/
+sql/
+.git/
+.github/
+__pycache__/
+*.db
+*.egg-info

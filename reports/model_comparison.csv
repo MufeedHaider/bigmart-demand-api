@@ -1,0 +1,19 @@
+regime,model,rmse,mae,r2,r2_sd
+warm,Outlet-type mean (baseline),1463.3618,1098.6304,0.2373,0.0
+warm,Ridge (log target),1132.4656,777.4463,0.5432,0.0001
+warm,Random Forest,1090.1764,761.9403,0.5767,0.0015
+warm,XGBoost,1093.2521,763.23,0.5743,0.0006
+warm,LightGBM,1097.6981,766.4205,0.5709,0.0007
+warm,LightGBM (gamma loss),1086.0746,755.1742,0.5799,0.0001
+cold_item,Outlet-type mean (baseline),1463.4904,1098.6879,0.2372,0.0002
+cold_item,Ridge (log target),1133.7786,778.5762,0.5422,0.0009
+cold_item,Random Forest,1088.7033,758.9457,0.5779,0.0006
+cold_item,XGBoost,1085.6849,760.1118,0.5802,0.0005
+cold_item,LightGBM,1089.5123,760.8514,0.5772,0.0003
+cold_item,LightGBM (gamma loss),1080.8613,752.9774,0.5839,0.0006
+cold_outlet,Outlet-type mean (baseline),1562.099,1140.7359,0.1309,0.0
+cold_outlet,Ridge (log target),1660.8073,1101.4194,0.0176,0.0
+cold_outlet,Random Forest,1310.219,946.8922,0.3886,0.0
+cold_outlet,XGBoost,1327.8392,945.0984,0.372,0.0
+cold_outlet,LightGBM,1354.4644,983.6638,0.3466,0.0
+cold_outlet,LightGBM (gamma loss),1372.5529,965.4777,0.329,0.0

@@ -1,0 +1,86 @@
+{
+  "n_rows": 8523,
+  "n_items": 1559,
+  "n_outlets": 10,
+  "data_sha256": "eb5b7a589322f3b1",
+  "split": {
+    "dev_rows": 6781,
+    "test_rows": 1742,
+    "test_items_unseen_in_dev": true
+  },
+  "tuning": {
+    "trials": 40,
+    "best_params": {
+      "num_leaves": 4,
+      "min_child_samples": 59,
+      "learning_rate": 0.025557343739213135,
+      "n_estimators": 517,
+      "subsample": 0.7624438720666736,
+      "colsample_bytree": 0.6734780723145115,
+      "reg_lambda": 1.9843056147691245,
+      "reg_alpha": 3.043720273740248
+    },
+    "default_cv": {
+      "rmse": 1081.5196052175393,
+      "mae": 753.0979507706154,
+      "r2": 0.583411043070198,
+      "r2_sd": 0.00013866524595324003
+    },
+    "tuned_cv": {
+      "rmse": 1065.090845758426,
+      "mae": 744.4055827647846,
+      "r2": 0.5959711163640085,
+      "r2_sd": 0.000492234762249133
+    },
+    "r2_gain": 0.0126
+  },
+  "test": {
+    "model": {
+      "rmse": 1131.0120738308374,
+      "mae": 784.686405433002,
+      "r2": 0.6122620018999116
+    },
+    "baseline_outlet_type_mean": {
+      "rmse": 1584.1310023762408,
+      "mae": 1170.7369257930834,
+      "r2": 0.23934790052169996
+    },
+    "r2_ci95": [
+      0.5817995488443009,
+      0.6383244773459784
+    ],
+    "rmse_ci95": [
+      1062.0864604998462,
+      1201.650357569473
+    ],
+    "rmse_reduction_vs_baseline_pct": 28.6
+  },
+  "intervals": {
+    "nominal": 0.8,
+    "qhat": 35.899195557636546,
+    "coverage_test": 0.7979,
+    "coverage_by_outlet_type": {
+      "Grocery Store": 0.901,
+      "Supermarket Type1": 0.785,
+      "Supermarket Type2": 0.821,
+      "Supermarket Type3": 0.732
+    },
+    "mean_width": 2542.1,
+    "median_width": 2377.5
+  },
+  "cold_outlet_r2_lgb_gamma": 0.329,
+  "shap_mean_abs_log_effect": {
+    "Item_MRP": 0.4369,
+    "Outlet_Type": 0.4109,
+    "Outlet_Age": 0.0401,
+    "Outlet_Size": 0.0286,
+    "Item_Type": 0.0135,
+    "Outlet_Location_Type": 0.0105,
+    "Item_Weight": 0.0064,
+    "Visibility_Ratio": 0.0055,
+    "Item_Visibility": 0.0042,
+    "Fat_Content": 0.0015,
+    "Item_Category": 0.0003
+  },
+  "runtime_seconds": 150.6
+}

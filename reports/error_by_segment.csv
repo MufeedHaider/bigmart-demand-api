@@ -1,0 +1,21 @@
+by,segment,n,rmse,mae,r2
+Outlet_Type,Grocery Store,223,224.606,168.29,0.292
+Outlet_Type,Supermarket Type1,1113,1166.079,846.101,0.469
+Outlet_Type,Supermarket Type2,201,951.418,712.338,0.466
+Outlet_Type,Supermarket Type3,205,1595.361,1192.703,0.534
+Item_Type,Baking Goods,122,900.718,677.193,0.611
+Item_Type,Breads,44,756.386,476.318,0.698
+Item_Type,Breakfast,42,1020.581,692.838,0.695
+Item_Type,Canned,132,992.462,724.637,0.587
+Item_Type,Dairy,193,1345.575,862.391,0.57
+Item_Type,Frozen Foods,231,1110.576,790.118,0.619
+Item_Type,Fruits and Vegetables,183,1384.865,928.239,0.614
+Item_Type,Hard Drinks,10,886.205,761.066,0.456
+Item_Type,Health and Hygiene,115,994.637,708.686,0.558
+Item_Type,Household,201,1146.365,813.267,0.584
+Item_Type,Meat,83,1112.286,800.735,0.636
+Item_Type,Others,30,814.916,490.86,0.617
+Item_Type,Seafood,25,1145.551,911.549,0.58
+Item_Type,Snack Foods,233,1105.757,807.649,0.618
+Item_Type,Soft Drinks,69,1022.979,734.047,0.586
+Item_Type,Starchy Foods,29,1270.804,840.934,0.594

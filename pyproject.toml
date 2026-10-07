@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "bigmart-demand"
+version = "1.0.0"
+description = "Leakage-safe retail sales estimation with calibrated prediction intervals, served by FastAPI"
+requires-python = ">=3.11"
+dependencies = ["pandas>=2.2", "numpy>=1.26", "scikit-learn>=1.4", "lightgbm>=4.3", "joblib>=1.3",
+                "fastapi>=0.110", "uvicorn>=0.29", "pydantic>=2.6"]
+
+[project.optional-dependencies]
+train = ["xgboost>=2.0", "optuna>=3.5", "shap>=0.45", "matplotlib>=3.8"]
+dev = ["pytest>=8", "httpx>=0.27", "bigmart-demand[train]"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = [".", "src"]
+filterwarnings = ["ignore::UserWarning"]

@@ -1,0 +1,8 @@
+# dataset is third-party (Analytics Vidhya / Kaggle): download it yourself, do not commit it
+data/
+*.db
+__pycache__/
+*.egg-info/
+.pytest_cache/
+.venv/
+build/
